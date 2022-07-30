@@ -2,6 +2,6 @@ import { PropertyMetadata, push } from "@notalk/core";
 
 type SnakeCaseArgs = Record<string, never>;
 
-export class SnakecaseMetadata extends PropertyMetadata<SnakeCaseArgs> {}
+export class SnakeCaseMetadata extends PropertyMetadata<SnakeCaseArgs> {}
 
-export const Snakecase = () => (target: any, name: string) => push(target, new SnakecaseMetadata({}, name));
+export const SnakeCase = () => (target: any, name: string) => push(target, new SnakeCaseMetadata({}, name));
