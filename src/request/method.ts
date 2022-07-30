@@ -8,7 +8,7 @@ export class MethodMetadata extends ClassMetadata<MethodArgs> {}
 
 export const Method = (value: string) => (target: any) =>
   push(
-    target,
+    target.prototype,
     new MethodMetadata({
       value,
     }),
