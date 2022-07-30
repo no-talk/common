@@ -2,7 +2,7 @@ export * from "./query";
 export * from "./body";
 export * from "./header";
 export * from "./bearer_auth";
-export * from "./optional";
+export * from "./required";
 export * from "./is_boolean_array";
 export * from "./is_boolean";
 export * from "./is_date";
