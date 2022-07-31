@@ -13,6 +13,7 @@ export * from "./is_nested";
 export * from "./is_number_array";
 export * from "./is_number";
 export * from "./is_one_of";
+export * from "./is_one_of_array";
 export * from "./is_string_array";
 export * from "./is_string";
 export * from "./endpoint";
