@@ -1,15 +1,7 @@
-import { ClassMetadata, push } from "@notalk/core";
+import { PropertyMetadata, push } from "@notalk/core";
 
-type DomainArgs = {
-  value: string;
-};
+type DomainArgs = Record<string, never>;
 
-export class DomainMetadata extends ClassMetadata<DomainArgs> {}
+export class DomainMetadata extends PropertyMetadata<DomainArgs> {}
 
-export const Domain = (value: string) => (target: any) =>
-  push(
-    target.prototype,
-    new DomainMetadata({
-      value,
-    }),
-  );
+export const Domain = () => (target: any, name: string) => push(target, new DomainMetadata({}, name));
