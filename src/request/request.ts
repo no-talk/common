@@ -19,3 +19,13 @@ export const Request = (method: Method, path?: string) => (target: any) =>
       path,
     }),
   );
+
+export const GET = (path?: string) => Request("GET", path);
+
+export const POST = (path?: string) => Request("POST", path);
+
+export const PUT = (path?: string) => Request("PUT", path);
+
+export const PATCH = (path?: string) => Request("PATCH", path);
+
+export const DELETE = (path?: string) => Request("DELETE", path);
