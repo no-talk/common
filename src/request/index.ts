@@ -20,3 +20,4 @@ export * from "./is_string";
 export * from "./request";
 export * from "./domain";
 export * from "./context";
+export * from "./files";
