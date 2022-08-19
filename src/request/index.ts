@@ -1,6 +1,7 @@
 export * from "./query";
 export * from "./path";
 export * from "./body";
+export * from "./raw_body";
 export * from "./header";
 export * from "./bearer_auth";
 export * from "./required";
