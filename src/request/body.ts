@@ -6,7 +6,7 @@ type BodyArgs = {
 
 export class BodyMetadata extends PropertyMetadata<BodyArgs> {}
 
-export const Body = (key: string) => (target: any, name: string) =>
+export const Body = (key?: string) => (target: any, name: string) =>
   push(
     target,
     new BodyMetadata(
