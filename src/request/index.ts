@@ -21,3 +21,4 @@ export * from "./request";
 export * from "./domain";
 export * from "./context";
 export * from "./files";
+export * from "./cookie";
